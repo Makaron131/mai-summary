@@ -43,11 +43,11 @@ function App() {
               <th>Type</th>
               <th>Level</th>
               <th>RA</th>
-              <th>Achievement</th>
-              <th>Genre</th>
-              <th>BPM</th>
-              <th>From</th>
-              <th>Artist</th>
+              <th className="mobile-hide">Achievement</th>
+              <th className="mobile-hide">Genre</th>
+              <th className="mobile-hide">BPM</th>
+              <th className="mobile-hide">From</th>
+              <th className="mobile-hide">Artist</th>
             </tr>
           </thead>
           <tbody>
@@ -71,11 +71,11 @@ function App() {
                 <td>{record.type}</td>
                 <td>{record.level}</td>
                 <td>{record.ra}</td>
-                <td>{record.achievements.toFixed(4)}%</td>
-                <td>{record.genre ?? '-'}</td>
-                <td>{record.bpm ?? '-'}</td>
-                <td>{record.from ?? '-'}</td>
-                <td>{record.artist ?? '-'}</td>
+                <td className="mobile-hide">{record.achievements.toFixed(4)}%</td>
+                <td className="mobile-hide">{record.genre ?? '-'}</td>
+                <td className="mobile-hide">{record.bpm ?? '-'}</td>
+                <td className="mobile-hide">{record.from ?? '-'}</td>
+                <td className="mobile-hide">{record.artist ?? '-'}</td>
               </tr>
             ))}
           </tbody>
